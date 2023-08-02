@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'HakgyoansimWoojuR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'SpoqaHanSansNeo', 'Apple SD Gothic Neo', sans-serif;
+  color: #242424;
+  font-size: 0.875rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 0.5px solid #dfdfdf;
+  height: 64px;
+}
+
+header h1 a {
+  font-size: 20px;
+  font-size: 1.5rem;
+  /* font-weight: 400; */
+  font-family: 'HakgyoansimWoojuR', sans-serif;
+}
+
+header .nav-box {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-box button {
+  font: inherit;
+  background-color: #333;
+  border-radius: 100px;
+  padding: 7px 25px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 1.25rem 1.5rem;
+  font-size: 1rem;
+}

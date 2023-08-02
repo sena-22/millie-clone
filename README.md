@@ -1,1 +1,1 @@
-# Landing Page Clone Project
+# Millie Clone Project
