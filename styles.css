@@ -30,13 +30,12 @@ header {
   align-items: center;
   padding: 0 1.5rem;
   border-bottom: 0.5px solid #dfdfdf;
-  height: 64px;
+  height: 4rem;
 }
 
 header h1 a {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-size: 1.5rem;
-  /* font-weight: 400; */
   font-family: 'HakgyoansimWoojuR', sans-serif;
 }
 
@@ -49,7 +48,7 @@ header .nav-box button {
   font: inherit;
   background-color: #333;
   border-radius: 100px;
-  padding: 7px 25px;
+  padding: 0.4rem 1.5rem;
   color: #fff;
   text-align: center;
   line-height: 1.125rem;
@@ -66,4 +65,50 @@ nav ul {
 nav ul li a {
   padding: 1.25rem 1.5rem;
   font-size: 1rem;
+}
+
+/* intro section */
+.intro-section {
+  height: 1000px;
+  padding-top: 4rem;
+  position: relative;
+  display: block;
+  max-width: 75rem;
+  background-size: 68.75rem;
+  background-repeat: no-repeat;
+  background-position: 98% 40%;
+}
+
+.intro-section .section-wrap {
+  height: 100%;
+  margin: 0 1.3rem;
+}
+
+.intro-section .text-wrap {
+  background-size: 46%;
+  height: 15rem;
+  margin-top: 5rem;
+  padding: 0 3rem;
+}
+
+.intro-section h1 {
+  background: url('/images/intro-text.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  text-indent: -9999px;
+  height: 14rem;
+  background-size: 50rem;
+  margin: 0.6rem 0;
+}
+
+.intro-section p {
+  /* TODO: 이미지 변경 */
+  background: url('/images/millie.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  text-indent: -9999px;
+  background-size: 9.3rem;
+  height: 3rem;
+  margin-top: 20rem;
+  margin-left: 0.6rem;
 }
