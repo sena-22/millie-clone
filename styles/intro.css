@@ -56,11 +56,11 @@
     background: linear-gradient(#f8faff 75.3%, #f0f4ff 0);
   }
   .intro-section .text-wrap {
-    margin-top: 4em;
-    padding: 4rem;
+    margin-top: 4rem;
+    padding: 0 4rem;
   }
   .intro-section h1 {
-    background-size: 130%;
+    background-size: 100%;
     height: 16rem;
   }
 }
@@ -87,12 +87,6 @@
     height: 9.9rem;
     width: 23.5rem;
     background-size: 150%;
-  }
-}
-
-@media (max-width: 29.3rem) {
-  .intro-section h1 {
-    height: 8.125rem;
   }
 }
 
