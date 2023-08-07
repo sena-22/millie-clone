@@ -1,0 +1,108 @@
+/* intro section */
+.intro-section {
+  height: 50rem;
+  padding-top: 4rem;
+  position: relative;
+  background: linear-gradient(#f8faff 67.5%, #f0f4ff 0);
+}
+
+.intro-section .section-wrap {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.intro-section .text-wrap {
+  background-size: 46%;
+  height: 15rem;
+  margin-top: 5rem;
+  padding: 0 3rem;
+}
+
+.intro-section h1 {
+  background: url('/images/intro-text.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  text-indent: -9999px;
+  height: 14rem;
+  background-size: 50rem;
+  margin: 0.6rem 0;
+
+  animation: fadeIn 1.8s forwards;
+}
+
+.intro-section p {
+  background: url('/images/millie.png');
+  background-repeat: no-repeat;
+  color: transparent;
+  text-indent: -9999px;
+  background-size: 9.3rem;
+  height: 3rem;
+  margin-top: 20rem;
+  margin-left: 0.6rem;
+
+  animation: fadeIn 1.2s 0.6s forwards;
+}
+
+@media (max-width: 65.625rem) {
+  .intro-section p {
+    display: none;
+  }
+}
+
+@media (max-width: 59rem) {
+  .intro-section {
+    height: 62.5rem;
+    background: linear-gradient(#f8faff 75.3%, #f0f4ff 0);
+  }
+  .intro-section .text-wrap {
+    margin-top: 4em;
+    padding: 4rem;
+  }
+  .intro-section h1 {
+    background-size: 130%;
+    height: 16rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .intro-section {
+    height: 56.25rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  .intro-section {
+    height: 41.6rem;
+    background: linear-gradient(#f8faff 75.3%, #f0f4ff 0);
+  }
+  .intro-section .text-wrap {
+    margin-top: 2.2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 33rem) {
+  .intro-section h1 {
+    height: 9.9rem;
+    width: 23.5rem;
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 29.3rem) {
+  .intro-section h1 {
+    height: 8.125rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate3d(0, 50%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
