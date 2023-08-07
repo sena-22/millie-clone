@@ -24,19 +24,75 @@ a {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+}
+
 header {
+  padding: 0 1.5rem;
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+header .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
   border-bottom: 0.5px solid #dfdfdf;
+  background-color: hsla(0, 0%, 100%, 0);
   height: 4rem;
+  transition: background-color 0s;
+  transition-delay: 0.3s;
 }
 
 header h1 a {
   font-size: 1.25rem;
   font-size: 1.5rem;
   font-family: 'HakgyoansimWoojuR', sans-serif;
+}
+
+header .btn-nav {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+header .btn-nav span,
+header .btn-nav:before,
+header .btn-nav:after {
+  display: block;
+  width: 1rem;
+  height: 0.125rem;
+  margin: 4px auto 0;
+  background-color: #333;
+  content: '';
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+header .btn-nav:before {
+  margin: 0 auto;
+}
+
+header .btn-nav.active span {
+  opacity: 0;
+  background-color: #242424;
+}
+
+header .btn-nav.active:before {
+  width: 18px;
+  transform: translateY(6px) rotate(45deg);
+}
+
+header .btn-nav.active:after {
+  width: 18px;
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 header .nav-box {
@@ -60,6 +116,10 @@ header .nav-box button {
 nav ul {
   display: flex;
   list-style: none;
+}
+
+nav ul li.service-center {
+  display: none;
 }
 
 nav ul li a {
@@ -119,12 +179,6 @@ nav ul li a {
   }
 }
 
-@media (max-width: 50rem) {
-  .intro-section {
-    height: 56.25rem;
-  }
-}
-
 @media (max-width: 59rem) {
   .intro-section {
     height: 62.5rem;
@@ -137,6 +191,65 @@ nav ul li a {
   .intro-section h1 {
     background-size: 130%;
     height: 16rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .intro-section {
+    height: 56.25rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  header .btn-nav {
+    display: block;
+  }
+
+  header .nav-box nav {
+    position: absolute;
+    top: -22rem;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    padding: 5rem 1rem 1.5rem;
+    background-color: #fff;
+    transition: top 0.3s ease;
+  }
+
+  header .nav-box nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .nav-box nav ul li a {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  header .nav-box nav ul li.service-center {
+    display: block;
+  }
+
+  header .header-wrap.active {
+    background-color: #fff;
+    transition-delay: 0s;
+  }
+
+  header .nav-box nav.active {
+    top: 0;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
   }
 }
 
