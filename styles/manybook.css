@@ -1,0 +1,26 @@
+.manybook-section .section-wrap {
+  padding: 5rem 1.5rem;
+  max-width: 100%;
+}
+
+.manybook-section .text-wrap {
+  margin-bottom: 3.75rem;
+}
+
+.manybook-section .text-wrap h2 {
+  text-align: center;
+  animation: fadeIn 2s forwards;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+  color: #242424;
+  margin-bottom: 1.5rem;
+}
+
+.manybook-section .text-wrap p {
+  font-size: 1.375rem;
+  line-height: 160%;
+  color: #555;
+  animation: fadeIn 2s forwards;
+  text-align: center;
+}
