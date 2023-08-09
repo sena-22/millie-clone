@@ -1,3 +1,5 @@
+import {headerLogoEl, headerWrapEl, manybookSectionEl, menuButtonEl, navEl} from './app.js'
+
 const toggleMenu = () => {
   if (menuButtonEl.classList.contains('active')) {
     menuButtonEl.classList.remove('active')
