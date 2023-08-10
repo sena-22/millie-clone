@@ -27,3 +27,48 @@
 .manybook-section.animation .section-wrap .text-wrap p {
   animation: fadeIn 2s forwards;
 }
+
+.bookslide-wrap {
+  margin-top: 5rem;
+}
+
+.bookslide-wrap .slide {
+  width: 100%;
+  height: 500px;
+}
+
+.bookslide-wrap .slide01 {
+  margin: -180px 0 0;
+  background: url('/images/manybook/01.png') 0/2500px repeat-x;
+  animation: slideLeft 100s linear infinite;
+}
+
+.bookslide-wrap .slide02 {
+  margin: -292px 0;
+  background: url('/images/manybook/02.png') 0/2500px repeat-x;
+  animation: slideRight 100s linear infinite;
+}
+
+.bookslide-wrap .slide03 {
+  margin: 0 0 -160px;
+  background: url('/images/manybook/03.png') 0/2500px repeat-x;
+  animation: slideLeft 100s linear infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -3000px;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    background-position: -3000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
