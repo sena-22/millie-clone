@@ -7,9 +7,12 @@ export const navEl = document.querySelector('.nav-box nav')
 
 export const introSectionEl = document.getElementById('intro')
 export const manybookSectionEl = document.getElementById('manybook')
+export const audiodramaSectionEl = document.getElementById('audiodrama')
 
 const ioIntro = new IntersectionObserver(handleIntersection)
 const ioManybook = new IntersectionObserver(handleIntersection)
+const ioAudiodrama = new IntersectionObserver(handleIntersection)
 
 ioIntro.observe(introSectionEl)
 ioManybook.observe(manybookSectionEl)
+ioAudiodrama.observe(audiodramaSectionEl)
