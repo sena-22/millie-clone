@@ -42,6 +42,7 @@ header {
   position: sticky;
   z-index: 100;
   top: 0;
+
   background-color: hsla(0, 0%, 100%, 0.9);
 }
 
@@ -87,7 +88,7 @@ header .btn-nav:before {
 
 header .btn-nav.active span {
   opacity: 0;
-  background-color: #242424;
+  /* background-color: #242424; */
 }
 
 header .btn-nav.active:before {
