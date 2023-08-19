@@ -59,6 +59,8 @@
 .audiodrama-section .video-wrap .object-video video {
   width: inherit;
   height: inherit;
+
+  object-fit: cover;
 }
 
 .audiodrama-section .objectlink-btn {
