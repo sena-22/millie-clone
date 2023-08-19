@@ -7,22 +7,6 @@
   margin-bottom: 3.75rem;
 }
 
-.manybook-section .text-wrap h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 130%;
-  color: #242424;
-  margin-bottom: 1.5rem;
-}
-
-.manybook-section .text-wrap p {
-  font-size: 1.375rem;
-  line-height: 160%;
-  color: #555;
-  text-align: center;
-}
-
 .manybook-section.animation .section-wrap .text-wrap h2,
 .manybook-section.animation .section-wrap .text-wrap p {
   animation: fadeIn 2s forwards;
